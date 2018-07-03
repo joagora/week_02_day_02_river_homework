@@ -1,4 +1,5 @@
 require_relative("bear")
+require_relative("fish")
 class River
   attr_reader :name, :fish
   def initialize name, fish
