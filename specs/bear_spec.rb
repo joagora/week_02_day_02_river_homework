@@ -19,11 +19,17 @@ class TestBear < MiniTest::Test
     assert_equal(expected, actual)
   end
 
-  def test_catch_fish
-    expected = 1
-    @bear.catch_fish(@fish)
-    actual = @bear.stomach
+  def test_food_count
+    expected = 0
+    actual = @bear.food_count
     assert_equal(expected, actual)
   end
+
+  # def test_catch_fish
+  #   expected = 1
+  #   @bear.catch_fish(@fish)
+  #   actual =
+  #   assert_equal(expected, actual)
+  # end
 
 end
