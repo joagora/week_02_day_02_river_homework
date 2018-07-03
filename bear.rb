@@ -3,7 +3,8 @@ class Bear
   def initialize name, type
     @name = name
     @type = type
-    @stomach = 0
+    @stomach = []
   end
+
 
 end
