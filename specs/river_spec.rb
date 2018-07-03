@@ -4,8 +4,12 @@ require_relative("../river")
 class TestRiver < MiniTest::Test
   def setup
 
-    fish = ["Nemo", "Dory", "Goldfish", "Fin"]
+    fish = [@nemo, @dory, @goldenfish, @fin]
     @river = River.new("Mekong", fish)
+    @nemo = Fish.new("Nemo")
+    @dory = Fish.new("Dory")
+    @goldenfish = Fish.new("Goldenfish")
+    @fin = Fish.new("Fin")
   end
 
   def test_name
@@ -19,4 +23,5 @@ class TestRiver < MiniTest::Test
     actual = @river.fish_count
     assert_equal(expected, actual)
   end
+
 end

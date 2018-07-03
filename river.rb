@@ -11,5 +11,4 @@ class River
     return @fish.length
   end
 
-
 end
